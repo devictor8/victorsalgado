@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    padding-left: 80px;
+    font-size: 17px;
+    background-color: #111111;
+    position: fixed;
+    width: 100%;
+}
+
+.header__image {
+    width: 100%;
+    max-width: 100px;
+}
+
+@media (max-width: 600px) {
+    .header {
+        position: relative;
+        padding-left: 0;
+        align-content: center;
+        margin: auto;
+    }
+}
