@@ -1,0 +1,14 @@
+.button__CV {
+    margin-top: 20px;
+    padding: 4.80% 8%;
+    color: white;
+    font-size: clamp(10px, 5vw, 17px);
+    background-color: #009E66;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button__CV:hover {
+    background-color: #00613f;
+}
