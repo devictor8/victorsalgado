@@ -6,6 +6,11 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+    
+}
+
+body {
+    background-color: #111111;
 }
 
 .green-dot::after {
