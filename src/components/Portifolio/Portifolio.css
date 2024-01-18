@@ -1,0 +1,32 @@
+.portifolio {
+    margin-top: 90px;
+    background-color: #111111;
+    display: flex;
+    padding: 30px 50px;
+    flex-direction: column;
+}
+
+.portifolio__title {
+    color: white;
+    text-align: center;
+    font-size: clamp(40px, 5vw, 50px)
+}
+
+.portifolio__repo-card {
+    display: flex;
+    gap: 10px;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+.portifolio__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.portifolio__image img {
+    width: 100%;
+    max-width: 500px;
+}
+

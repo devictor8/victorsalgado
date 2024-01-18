@@ -8,11 +8,11 @@ function NavBar() {
 
 	return (
 		<nav className={`menu ${isMenuOpen? 'active-nav': ''}`}>
-			<a href="#">Home</a>
-			<a href="#">Sobre</a>
-			<a href="#">Serviços</a>
-			<a href="#">Portifólio</a>
-			<a href="#">Contato</a>
+			<a href="#1">Home</a>
+			<a href="#2">My Projects</a>
+			<a href="#">Services</a>
+			<a href="#">Resume</a>
+			<a href="#">Contact</a>
 		</nav>
 	);
 }

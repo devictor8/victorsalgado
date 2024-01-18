@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import './Header.css';
-import logo from './logo_v.png';
+import logo from '../../images/logo_v.png';
 import MenuContext from '../../context/MenuContext';
 import { CiMenuFries } from 'react-icons/ci';
 
