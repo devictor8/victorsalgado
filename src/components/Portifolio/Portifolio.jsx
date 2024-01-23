@@ -1,33 +1,22 @@
-import React, { useEffect, useState } from 'react';
-import RepoCard from '../RepoCard/RepoCard';
+import React from 'react';
 import './Portifolio.css';
-import fetchRepos from '../../api/fetchRepos';
-import imagem from '../../images/img-teste.png';
+import imagem from '../../assets/images/img-teste.png';
+import Carousel from '../Carousel/Carousel';
+
 function Portifolio() {
-	const [dataRepo, setDataRepo] = useState([]);
-	useEffect(()=> {
-		fetchRepos().then((response) => {
-			setDataRepo(response);
-		});
-	}, []);
+
 
 	return (
 		<section id="2" className="portifolio">
-			<h1  className="portifolio__title green-dot">My projects</h1>
+			<div className="portifolio__txt">
+				<h1 className="green-dot">My projects</h1>
+				<p>Projects on my GitHub</p>
+			</div>
 			<div className="portifolio__content">
 				<div className="portifolio__image">
 					<img src={imagem} alt="" />
 				</div>
-				<div className="portifolio__repo-card">
-					{
-						dataRepo.map((repo) => {
-							const name = repo.name;
-							if(repo.license != null) {
-								return <RepoCard key={repo.id} data = {{name, repo}}/>;
-							}
-						})
-					}
-				</div>
+				<Carousel />
 			</div>
 		</section>
 	);
