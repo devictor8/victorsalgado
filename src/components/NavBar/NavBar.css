@@ -1,5 +1,5 @@
 .menu {
-    position: absolute;
+    position: fixed;
     display: flex;
     gap: 15px;
     top: 40px;
@@ -8,6 +8,7 @@
 }
 
 .menu a {
+    font-size: 20px;
     color: white;
     transition: 0.5s;
 }
@@ -16,7 +17,7 @@
     color: #009E66;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     .menu {
         z-index: 1;
         position: absolute;

@@ -1,0 +1,10 @@
+.slider {
+    display: flex;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.slide-item {
+    width: 300px;
+}
