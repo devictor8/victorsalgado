@@ -7,7 +7,7 @@ export default function DarkModeMenu() {
 
   return (
     <div>
-      <button onClick={handleTheme} type="button"><CgDarkMode className="text-4xl" /></button>
+      <button type="button"><CgDarkMode className="text-4xl" /></button>
     </div>
   );
 }
