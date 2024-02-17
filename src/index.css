@@ -4,6 +4,6 @@
 
 @layer components {
     .nav-link {
-        @apply px-2 hover:text-cyan-600 text-xl transition
+        @apply px-2 hover:text-cyan-600 text-xl transition dark:text-white
     }
 }

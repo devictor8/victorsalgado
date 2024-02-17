@@ -1,5 +1,6 @@
 import React from 'react';
 import CVButton from './CVButton';
+import DarkModeMenu from './DarkModeMenu';
 
 export default function MenuBar() {
   return (
@@ -10,6 +11,7 @@ export default function MenuBar() {
         <a className="nav-link" href="#">Contatos</a>
       </nav>
       <CVButton />
+      <DarkModeMenu />
     </div>
   );
 }
