@@ -3,7 +3,15 @@
 @tailwind utilities;
 
 @layer components {
+    .text-color-default {
+        @apply dark:text-neutral-300
+    }
     .nav-link {
-        @apply px-2 hover:text-cyan-600 text-xl transition dark:text-white
+        @apply px-2 hover:text-cyan-600 text-xl transition text-color-default
+        dark:hover:text-cyan-900
+    }
+    .themeIterface {
+        @apply w-32 text-lg flex items-center px-2 py-1 hover:bg-slate-200
+        dark:hover:bg-zinc-800 text-color-default
     }
 }
